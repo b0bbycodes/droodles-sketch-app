@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Droodles</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./reset.css" />
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/d6bcf3b931.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="flex-container">
+      <div class="title"><h1>DROODLES</h1></div>
+      <div class="mode"><p>Mode: Coloring</p></div>
+      <div class="content">
+        <div class="board"></div>
+        <div class="buttons">
+            <button class="black-btn" onClick = "changeColor('black')">Black</button>
+            <button class="eraser" onClick = "changeColor('white')">Eraser</button>
+            <button class="grey-btn" onClick = "changeColor('grey')">Grey</button>
+            <button class="random-btn" onClick = "changeColor('random')">Random</button>
+            <button class="reset-btn" onclick="resetBoard()"> <i class="fa-solid fa-repeat fa-bounce fa-lg" style="color: #0a101a;"></i>Reset</button>
+        </div>
+        <div class="input">
+            <input type="text" placeholder="Size of Board" value="16" onchange="changeSize(this.value)">
+            <button class="size-btn">Set Size</button>
+        </div>
+        <div>
+            <p class="input-text"></p>
+        </div>
+      </div>
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>

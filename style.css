@@ -91,6 +91,14 @@ p {
   color: white;
 }
 
+.eraser i {
+  display: none;
+}
+
+.eraser:hover i {
+  display: inline-block;
+}
+
 .grey-btn:hover {
   background-color: grey;
   color: white;
